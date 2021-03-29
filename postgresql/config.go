@@ -1,7 +1,6 @@
 package postgresql
 
 import (
-	"context"
 	"database/sql"
 	"fmt"
 	"net/url"
@@ -12,9 +11,6 @@ import (
 
 	"github.com/blang/semver"
 	_ "github.com/lib/pq" //PostgreSQL db
-	"gocloud.dev/postgres"
-	_ "gocloud.dev/postgres/awspostgres"
-	_ "gocloud.dev/postgres/gcppostgres"
 )
 
 type featureName uint
